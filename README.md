@@ -18,3 +18,11 @@ So you’ll run out of memory sooner or later.
 ## Solution
 
 Parameter-Efficient Fine-Tuning (PEFT) techniques
+
+
+## Tools
+PEFT HuggingFace library : https://github.com/huggingface/peft
+
+## Materials
+Blog post: https://huggingface.co/blog/trl-peft
+
