@@ -33,6 +33,14 @@ In the TRL-PEFT blog post, fine tuning 20B model took a single 24GB GPU thank to
 PEFT HuggingFace library : https://github.com/huggingface/peft
 
 ## Materials
-TRL-PEFT Blog post: https://huggingface.co/blog/trl-peft
-Better Call Bloom : https://pub.towardsai.net/training-a-large-language-model-to-give-non-legal-advice-b9f6d7d11016
+Basic Finetuning LLM : 
+- Better Call Bloom : https://pub.towardsai.net/training-a-large-language-model-to-give-non-legal-advice-b9f6d7d11016
+
+Efficient finetuning techniques materials:
+- TRL-PEFT Blog post: https://huggingface.co/blog/trl-peft
+
+Efficient finetuning examples:
+- finetuning LLama with TRL and PEFT : https://huggingface.co/blog/stackllama
+- Finetuning Bloom : https://www.philschmid.de/bloom-sagemaker-peft
+- 
 
