@@ -15,14 +15,24 @@ So a 7B parameter model would use (2+2)7B=28GB just to fit in memory (if we use 
 
 So you’ll run out of memory sooner or later.
 
+One real case, Check out Better Call Bloom : in this example Thomas finetuned without efficient techniques 3B Bloom for causal momdeling on A100 40GB GPU for 3 epochs, and it took him 26 hours. Joe Papa in his workshop showed that only using Pytorch 2.0 took down the duration to 16 hours.
+
 ## Solution
 
 Parameter-Efficient Fine-Tuning (PEFT) techniques
+
+In the TRL-PEFT blog post, fine tuning 20B model took a single 24GB GPU thank to these techinques:
+- Load the model in 8-bit precision : Quantize the model using the HF transformer library by precising load_in_8bit=True argument when calling .from_pretrained method
+- Add extra trainable adapters using peft and reduce the memory requirements for the optimizer states  by training only the adapters parameters.
+- get a reference model and an active logits: with peft ther is no need to copy the model, using the disable_adapters parameter, the library uses the same model and reduce memory
+- 
+
 
 
 ## Tools
 PEFT HuggingFace library : https://github.com/huggingface/peft
 
 ## Materials
-Blog post: https://huggingface.co/blog/trl-peft
+TRL-PEFT Blog post: https://huggingface.co/blog/trl-peft
+Better Call Bloom : https://pub.towardsai.net/training-a-large-language-model-to-give-non-legal-advice-b9f6d7d11016
 
