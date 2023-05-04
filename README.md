@@ -35,6 +35,7 @@ PEFT HuggingFace library : https://github.com/huggingface/peft
 ## Materials
 Basic Finetuning LLM : 
 - Better Call Bloom : https://pub.towardsai.net/training-a-large-language-model-to-give-non-legal-advice-b9f6d7d11016
+- Basic Causal language model training : https://huggingface.co/learn/nlp-course/chapter7/6?fw=pt
 
 Efficient finetuning techniques materials:
 - TRL-PEFT Blog post: https://huggingface.co/blog/trl-peft
