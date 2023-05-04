@@ -49,3 +49,10 @@ Efficient finetuning examples:
 - [ ] Finetuning Bloom : https://www.philschmid.de/bloom-sagemaker-peft
 - [ ] LLama-adapter : https://github.com/ZrrSkywalker/LLaMA-Adapter
 - [ ] Finetuning Lit-LLama with Lora and Adapters : https://github.com/Lightning-AI/lit-llama
+
+
+## Datasets
+- Alpaca dataset : https://github.com/tatsu-lab/stanford_alpaca
+- Databricks Dolly dataset : https://huggingface.co/datasets/databricks/databricks-dolly-15k
+- Checkout the [self-instruct paper](https://arxiv.org/abs/2212.10560), the method used to generate the Alpaca dataset 
+
