@@ -43,5 +43,4 @@ Efficient finetuning techniques materials:
 Efficient finetuning examples:
 - [x] Finetuning LLama with TRL and PEFT : https://huggingface.co/blog/stackllama 
 - [ ] Finetuning Bloom : https://www.philschmid.de/bloom-sagemaker-peft
-- 
 
