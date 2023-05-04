@@ -19,7 +19,10 @@ One real case, Check out Better Call Bloom : in this example Thomas finetuned wi
 
 ## Solution
 
-Parameter-Efficient Fine-Tuning (PEFT) techniques
+Parameter-Efficient Fine-Tuning (PEFT) techniques:
+- Prefix Tuning
+- Adapters
+- LLama-Adapter method : a combination of prefix tuning and adapter method with some changes checkout [the LLama-adapter implementation](https://github.com/ZrrSkywalker/LLaMA-Adapter)
 
 In the TRL-PEFT blog post, fine tuning 20B model took a single 24GB GPU thank to these techinques:
 - Load the model in 8-bit precision : Quantize the model using the HF transformer library by precising load_in_8bit=True argument when calling .from_pretrained method
@@ -39,8 +42,10 @@ Basic Finetuning LLM :
 
 Efficient finetuning techniques materials:
 - [x] TRL-PEFT Blog post: https://huggingface.co/blog/trl-peft
+- [x] Understanding Parameter-Efficient Finetuning of Large Language Models: From Prefix Tuning to LLaMA-Adapters : https://lightning.ai/pages/community/article/understanding-llama-adapters/
 
 Efficient finetuning examples:
 - [x] Finetuning LLama with TRL and PEFT : https://huggingface.co/blog/stackllama 
 - [ ] Finetuning Bloom : https://www.philschmid.de/bloom-sagemaker-peft
-
+- [ ] LLama-adapter : https://github.com/ZrrSkywalker/LLaMA-Adapter
+- [ ] Finetuning Lit-LLama with Lora and Adapters : https://github.com/Lightning-AI/lit-llama
