@@ -57,9 +57,11 @@ Efficient finetuning techniques materials:
 - [x] TRL-PEFT Blog post: https://huggingface.co/blog/trl-peft
 - [x] Understanding Parameter-Efficient Finetuning of Large Language Models: From Prefix Tuning to LLaMA-Adapters : https://lightning.ai/pages/community/article/understanding-llama-adapters/
 - [x] Parameter-Efficient LLM Finetuning With Low-Rank Adaptation (LoRA) : https://lightning.ai/pages/community/tutorial/lora-llm/ + [code](https://github.com/rasbt/low-rank-adaptation-blog)
+- [x] PEFT HuggingFace Library : https://huggingface.co/docs/peft/index
 
 Efficient finetuning examples:
 - [x] Finetuning LLama with TRL and PEFT : https://huggingface.co/blog/stackllama
+- [ ] HF PEFT examples : https://huggingface.co/docs/peft/index & Github : https://github.com/huggingface/peft
 - [ ] Finetuning Lit-LLama with Lora and Adapters : https://github.com/Lightning-AI/lit-llama + code : https://github.com/rasbt/low-rank-adaptation-blog
 - [ ] Finetuning Bloom : https://www.philschmid.de/bloom-sagemaker-peft
 - [ ] LLama-adapter : https://github.com/ZrrSkywalker/LLaMA-Adapter
