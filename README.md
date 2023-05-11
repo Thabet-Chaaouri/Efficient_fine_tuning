@@ -42,7 +42,7 @@ In Sebastien Blog Post, a comparison between Basic, LoRA and Adapter finetuning 
     * Fully sharded training to distribute the weights. 
     * Or 4 GPUs with a maximum memory usage of 22 Gb per GPU. The training on 4 GPUs took 1956 min. This would be at least 6,000 min on a single GPU, which would be 30-40x more expensive than the parameter-efficient LLaMA-Adapter or LoRA alternatives.
 
-A comparatif fine tuning is done using the prefix and basic finetuning in a (google colab notebook)[https://github.com/Thabet-Chaaouri/Efficient_fine_tuning/blob/main/Prefix_VS_Basic_fine_tuning.ipynb] on T5 large model, to do sentiment analysis:
+A comparatif fine tuning is done using the prefix and basic finetuning in a [google colab notebook](https://github.com/Thabet-Chaaouri/Efficient_fine_tuning/blob/main/Prefix_VS_Basic_fine_tuning.ipynb) on T5 large model, to do sentiment analysis:
 - with basic tuning, we can't fit the model in A100 GPU and had to use accelerator and mixed precision fp16
 - With prefix tuning, the model did fit easily.
 
