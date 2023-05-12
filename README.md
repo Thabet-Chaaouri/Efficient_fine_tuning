@@ -46,6 +46,9 @@ A comparatif fine tuning is done using the prefix and basic finetuning in a [goo
 - with basic tuning, we can't fit the model in A100 GPU and had to use accelerator and mixed precision fp16
 - With prefix tuning, the model did fit easily.
 
+A comparatif fine tuning is done between prompt and full finetuning in a Google Colab notebook on Bloomz 560M model to calssify complaint text:
+- epoch duration = 1mn40s with prompt tuning
+- epoch duration = -- with full finetuning
 
 ## Tools
 PEFT HuggingFace library : https://github.com/huggingface/peft
