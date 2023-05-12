@@ -46,7 +46,7 @@ A comparatif fine tuning is done using the prefix and basic finetuning in a [goo
 - with basic tuning, we can't fit the model in A100 GPU and had to use accelerator and mixed precision fp16
 - With prefix tuning, the model did fit easily.
 
-A comparatif fine tuning is done between prompt and full finetuning in a Google Colab notebook on Bloomz 560M model to calssify complaint text:
+A comparatif fine tuning is done between prompt and full finetuning in a [Google Colab notebook](https://github.com/Thabet-Chaaouri/Efficient_fine_tuning/blob/main/Prompt_VS_Basic_Tuning.ipynb) on Bloomz 560M model to calssify complaint text:
 - epoch duration = 1mn40s with prompt tuning
 - epoch duration = -- with full finetuning
 
@@ -66,7 +66,7 @@ Efficient finetuning techniques materials:
 
 Efficient finetuning examples:
 - [x] Finetuning LLama with TRL and PEFT : https://huggingface.co/blog/stackllama
-- [ ] HF PEFT examples : https://huggingface.co/docs/peft/index & Github : https://github.com/huggingface/peft
+- [x] HF PEFT examples : https://huggingface.co/docs/peft/index & Github : https://github.com/huggingface/peft
 - [ ] Finetuning Lit-LLama with Lora and Adapters : https://github.com/Lightning-AI/lit-llama + code : https://github.com/rasbt/low-rank-adaptation-blog
 - [ ] Finetuning Bloom : https://www.philschmid.de/bloom-sagemaker-peft
 - [ ] LLama-adapter : https://github.com/ZrrSkywalker/LLaMA-Adapter
