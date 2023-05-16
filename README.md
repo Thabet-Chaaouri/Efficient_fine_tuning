@@ -50,6 +50,10 @@ A comparatif fine tuning is done between prompt and full finetuning in a [Google
 - epoch duration = 1mn40s with prompt tuning
 - epoch duration = -- with full finetuning
 
+An example of finetuning is done using 8 bit precision on OPT 6.7B parameters:
+- Without quantization the model would need about 14Gb just to load the model
+- with quantization it took only 7 Gb to load the model then with LoRA it was possible to train it on one single GPU in [Kaggle Notebook](https://www.kaggle.com/code/thabetchaaouri/notebook771577603e/edit)
+
 ## Tools
 PEFT HuggingFace library : https://github.com/huggingface/peft
 
