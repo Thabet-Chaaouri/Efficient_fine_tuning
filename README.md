@@ -19,6 +19,11 @@ One real case, Check out Better Call Bloom : in this example Thomas finetuned wi
 
 ## Solution
 
+-Loading in 8bit precision
+-Usinng Lora adapters to do efficient fine-tuning 
+
+------------------------------------------------------------
+
 Parameter-Efficient Fine-Tuning (PEFT) techniques:
 - Prefix Tuning
 - Adapters
