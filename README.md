@@ -19,8 +19,27 @@ One real case, Check out Better Call Bloom : in this example Thomas finetuned wi
 
 ## Solution
 
-- Loading in 8bit precision
+- Loading in 8bit/4bit precision
 - Usinng Lora adapters to do efficient fine-tuning 
+
+One way is using QLora : 
+- leveraging NF4 (normalized float 4 (default)) or FP4 storage dtype. NF4 has shown to achieve better performance.
+- using a second quantization after the first one to save an additional 0.4 bits per parameter.
+- Chosing a proper computation dtype (float16, bfloat16, float32 etc), because we can't perform computation in 4 bits
+
+"""
+from transformers import BitsAndBytesConfig
+
+
+nf4_config = BitsAndBytesConfig(
+   load_in_4bit=True,
+   bnb_4bit_quant_type="nf4",
+   bnb_4bit_use_double_quant=True,
+   bnb_4bit_compute_dtype=torch.bfloat16
+)
+
+model_nf4 = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=nf4_config)
+"""
 
 ------------------------------------------------------------
 
