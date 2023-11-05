@@ -27,7 +27,7 @@ One way is using QLora :
 - using a second quantization after the first one to save an additional 0.4 bits per parameter.
 - Chosing a proper computation dtype (float16, bfloat16, float32 etc), because we can't perform computation in 4 bits
 
-"""
+```
 from transformers import BitsAndBytesConfig
 
 
@@ -39,7 +39,7 @@ nf4_config = BitsAndBytesConfig(
 )
 
 model_nf4 = AutoModelForCausalLM.from_pretrained(model_id, quantization_config=nf4_config)
-"""
+```
 
 ------------------------------------------------------------
 
