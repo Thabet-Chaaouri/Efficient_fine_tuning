@@ -19,6 +19,16 @@ One real case, Check out Better Call Bloom : in this example Thomas finetuned wi
 
 ## Solution
 
+#### Mixed precision :
+You can do full finetuning in mixed precision with fp16 or bf16.
+FP16 has limitations: reduced precision can lead to inaccurate weight updates, gradient underflows, and activation/loss overflows. To address these, mixed precision training is used:
+- Forward and backward passes are done in FP16.
+- Weight updates are done in FP32 using a master copy of the model. (so you can't load the model in fp16 for full finetuning, it sould be loaded in full precision)
+- Gradient scaling is introduced to prevent underflows by multiplying the loss before backpropagation, then rescaling gradients after.
+
+BF16 (BFloat16), another 16-bit format with the same range as FP32 but lower precision. BF16 avoids gradient scaling and is supported on newer hardware (Ampere+). It is recommended to work with bf16 as it is more stable.
+
+#### PEFT techniques :
 - Loading in 8bit/4bit precision
 - Usinng Lora adapters to do efficient fine-tuning 
 
